@@ -9,7 +9,7 @@ try:
         len = len(reader.BLOCK_ADDRS)
         id, text = reader.read()
         cut_text = text[0:(len*4)]
-        print("ID: %s\nText: %s" % (id,text))
+        print("ID: %s\nText: %s" % (id,cut_text))
         sleep(5)
 except KeyboardInterrupt:
     GPIO.cleanup()
