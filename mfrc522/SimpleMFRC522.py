@@ -50,7 +50,7 @@ class SimpleMFRC522:
             for block_num in self.BLOCK_ADDRS:
                 block = self.READER.MFRC522_Read(block_num)
                 if block:
-                    data += block
+                    data += block[0:4]
                     print(block)
             if data:
                 text_read = ''.join(chr(i) for i in data)
