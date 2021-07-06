@@ -51,7 +51,6 @@ class SimpleMFRC522:
                 block = self.READER.MFRC522_Read(block_num)
                 if block:
                     data += block[0:4]
-                    print(block)
             if data:
                 text_read = ''.join(chr(i) for i in data)
         self.READER.MFRC522_StopCrypto1()
