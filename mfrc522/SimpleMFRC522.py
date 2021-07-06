@@ -8,7 +8,7 @@ class SimpleMFRC522:
     READER = None
 
     KEY = [0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
-    BLOCK_ADDRS = [8, 9, 10, 11, 12]
+    BLOCK_ADDRS = [6, 7, 8, 9, 10, 11, 12]
 
     def __init__(self):
         self.READER = MFRC522()
