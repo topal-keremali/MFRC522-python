@@ -1,3 +1,7 @@
+# fork-reason
+One block is 4 bytes big, but the write-hardware wrote only every 4th byte. So "this is a sample text" was written as "t aalt". I ended up using a macgyver solution where i repeated each char 4 times. 
+
+
 # mfrc522
 
 A python library to read/write RFID tags via the budget MFRC522 RFID module.
